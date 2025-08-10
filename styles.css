@@ -220,3 +220,29 @@ dialog a.link-accent {
   line-height: 1.6;
   font-size: 1.035rem;
 }
+
+/* ### CALL TO ACTION ### */
+
+.cta-section {
+  padding: 4.5rem 2rem;
+  background-color: var(--blue-950);
+  color: var(--gray-50);
+  margin-inline: 1.5rem;
+  text-align: center;
+  background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.cta-section h2 {
+  font-size: 2.325rem;
+  line-height: 1.1;
+  font-weight: var(--fw-400);
+}
+
+.cta-section a {
+  margin-top: 2.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: var(--fw-700);
+}
