@@ -39,3 +39,14 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+/* ### UTILITY CLASSES ### */
+
+.hide {
+  display: none;
+}
+
+.link-accent {
+  border: 1px solid var(--gray-50);
+  padding: 1rem 1.8rem;
+}
