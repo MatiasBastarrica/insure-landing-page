@@ -111,3 +111,62 @@ dialog nav ul {
 dialog a.link-accent {
   width: 100%;
 }
+
+/* ### HUMANIZING SECTION ### */
+
+.humanizing-section {
+  background-color: var(--blue-950);
+  position: relative;
+}
+
+.humanizing-section::after {
+  content: "";
+  position: absolute;
+  bottom: -176px;
+  right: 0;
+  display: block;
+  width: 124px;
+  height: 330px;
+  background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.humanizing-section .grid {
+  display: grid;
+  grid-template-areas:
+    "img"
+    "content";
+}
+
+.grid__content {
+  grid-area: content;
+  text-align: center;
+  color: var(--gray-50);
+  padding: 6.5rem 1.5rem;
+  background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.grid__content h1 {
+  line-height: 1.2;
+  font-size: 2.8rem;
+}
+
+.grid__content p {
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  font-size: 1.025rem;
+}
+
+.grid__content a {
+  margin-top: 1.8rem;
+  padding-inline: 2rem;
+  font-weight: var(--fw-700);
+  letter-spacing: 3px;
+}
+
+.grid__img {
+  grid-area: img;
+}
