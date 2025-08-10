@@ -112,7 +112,7 @@ dialog a.link-accent {
   width: 100%;
 }
 
-/* ### HUMANIZING SECTION ### */
+/* ### "HUMANIZING" SECTION ### */
 
 .humanizing-section {
   background-color: var(--blue-950);
@@ -169,4 +169,54 @@ dialog a.link-accent {
 
 .grid__img {
   grid-area: img;
+}
+
+/* ### "WE ARE DIFFERENT" SECTION ### */
+
+.we-are-different-section {
+  padding: 8rem 1.5rem;
+  text-align: center;
+}
+
+.we-are-different-section::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 45%;
+  margin-inline: auto;
+  background-color: #c2b3c3;
+}
+
+.we-are-different-section h2 {
+  font-size: 2.4rem;
+  padding-top: 2.5rem;
+}
+
+.cards-container {
+  margin-top: 4rem;
+  display: grid;
+  gap: 3.5rem;
+}
+
+.card {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.card__img {
+  width: 80px;
+}
+
+.card__title {
+  margin-top: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: var(--fw-700);
+  font-family: var(--ff-dm-serif-display);
+}
+
+.card__p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.035rem;
 }
