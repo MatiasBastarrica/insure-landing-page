@@ -56,6 +56,20 @@ svg {
   color: inherit;
 }
 
+/* ### GENERAL STYLING ### */
+
+body {
+  font-family: var(--ff-karla);
+  font-weight: var(--fw-400);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-dm-serif-display);
+  font-weight: var(--fw-700);
+}
+
 /* ### HEADER ### */
 
 header {
