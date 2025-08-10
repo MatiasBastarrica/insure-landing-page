@@ -8,4 +8,9 @@
   --gray-950: hsl(270, 9%, 17%);
   --gray-700: hsl(273, 4%, 51%);
   --gray-50: hsl(0, 0%, 98%);
+  /* # TYPOGRAPHY # */
+  --ff-dm-serif-display: "DM Serif Display", serif;
+  --ff-karla: "Karla", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
 }
