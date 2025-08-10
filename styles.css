@@ -55,3 +55,12 @@ svg {
   text-decoration: none;
   color: inherit;
 }
+
+/* ### HEADER ### */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 1.5rem;
+}
