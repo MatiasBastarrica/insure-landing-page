@@ -87,6 +87,10 @@ header {
   cursor: pointer;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 dialog {
   background-color: var(--gray-950);
   color: var(--gray-50);
@@ -103,6 +107,7 @@ dialog {
   background-image: url(./images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
   background-position: bottom;
+  z-index: 5;
 }
 
 dialog nav ul {
@@ -302,4 +307,22 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+@media (min-width: 62.5em) {
+  /* # HEADER # */
+  .nav-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: stretch;
+  }
 }
