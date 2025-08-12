@@ -440,6 +440,7 @@ footer {
 
   .humanizing-section {
     height: 600px;
+    background-image: none;
   }
 
   .humanizing-section::after {
