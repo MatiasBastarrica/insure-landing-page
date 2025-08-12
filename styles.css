@@ -160,7 +160,7 @@ dialog a.link-accent {
 
 .grid__content h1 {
   line-height: 1.2;
-  font-size: 2.8rem;
+  font-size: clamp(2.8rem, 2.2014rem + 2.554vw, 4.5rem);
 }
 
 .grid__content p {
@@ -188,7 +188,7 @@ dialog a.link-accent {
 }
 
 .we-are-different-section h2 {
-  font-size: 2.4rem;
+  font-size: clamp(2.4rem, 2.0127rem + 1.6526vw, 3.5rem);
   padding-top: 2.5rem;
   position: relative;
 }
@@ -251,7 +251,7 @@ dialog a.link-accent {
 }
 
 .cta-section h2 {
-  font-size: 2.325rem;
+  font-size: clamp(2.325rem, 1.9113rem + 1.7653vw, 3.5rem);
   line-height: 1.1;
   font-weight: var(--fw-400);
 }
@@ -304,7 +304,6 @@ footer {
 
 .ft-item h2 {
   font-family: var(--ff-karla);
-  font-size: 1rem;
   color: var(--gray-700);
   font-size: 0.85rem;
 }
@@ -380,7 +379,6 @@ footer {
   }
 
   .grid__content h1 {
-    font-size: 4.5rem;
     max-width: 15ch;
     position: relative;
     padding-top: 3rem;
@@ -418,10 +416,6 @@ footer {
   .we-are-different-section .container {
     width: 85%;
     margin-inline: auto;
-  }
-
-  .we-are-different-section h2 {
-    font-size: 3.5rem;
   }
 
   .we-are-different-section h2::before {
@@ -463,8 +457,35 @@ footer {
   }
 
   .cta-section h2 {
-    font-size: 3.5rem;
     max-width: 18ch;
     text-wrap: balance;
+  }
+
+  /* # FOOTER # */
+
+  footer {
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-position: top left;
+  }
+
+  footer > * {
+    width: 85%;
+    margin-inline: auto;
+  }
+
+  .row-1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row-2 {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-end: 10rem;
+  }
+
+  .ft-item {
+    text-align: start;
   }
 }
