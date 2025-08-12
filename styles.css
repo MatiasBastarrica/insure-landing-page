@@ -344,6 +344,17 @@ footer {
     padding: 0.5rem 1.5rem;
     color: var(--gray-950);
   }
+
+  /* # CTA SECTION # */
+  .cta-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .cta-section h2 {
+    max-width: 18ch;
+    text-wrap: balance;
+  }
 }
 
 @media (min-width: 23.438em) {
@@ -472,14 +483,8 @@ footer {
     width: 85%;
     text-align: start;
     padding: 4rem 5.5rem;
-    flex-direction: row;
     justify-content: space-between;
     background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
-  }
-
-  .cta-section h2 {
-    max-width: 18ch;
-    text-wrap: balance;
   }
 
   /* # FOOTER # */
