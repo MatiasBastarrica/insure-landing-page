@@ -187,18 +187,22 @@ dialog a.link-accent {
   text-align: center;
 }
 
-.we-are-different-section::before {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 45%;
-  margin-inline: auto;
-  background-color: #c2b3c3;
-}
-
 .we-are-different-section h2 {
   font-size: 2.4rem;
   padding-top: 2.5rem;
+  position: relative;
+}
+
+.we-are-different-section h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 2px;
+  width: 148px;
+  background-color: #c2b3c3;
 }
 
 .cards-container {
@@ -397,5 +401,49 @@ footer {
     width: 25%;
     height: 1px;
     background-color: var(--gray-50);
+  }
+
+  /* # "WE ARE DIFFERENT" SECTION # */
+
+  .we-are-different-section {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    position: relative;
+    text-align: start;
+  }
+
+  .we-are-different-section .container {
+    width: 85%;
+    margin-inline: auto;
+  }
+
+  .we-are-different-section h2 {
+    font-size: 3.5rem;
+  }
+
+  .we-are-different-section h2::before {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .we-are-different-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+    width: 195px;
+    height: 504px;
+    top: -167px;
+    left: 0;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.8rem;
+  }
+
+  .card {
+    text-align: start;
+    justify-items: start;
   }
 }
