@@ -337,4 +337,63 @@ footer {
     padding: 0.5rem 1.5rem;
     color: var(--gray-950);
   }
+
+  /* # "HUMANIZING" SECTION # */
+
+  .humanizing-section {
+    height: 600px;
+  }
+
+  .humanizing-section::after {
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    width: 436px;
+    height: 593px;
+    top: 0;
+    right: 0;
+    bottom: unset;
+    background-position: top -78px right 0px;
+  }
+
+  .humanizing-section .grid {
+    width: 85%;
+    margin-inline: auto;
+    grid-template-areas: "content img";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid__content {
+    text-align: start;
+    background-image: none;
+  }
+
+  .grid__img {
+    margin-top: 6.5rem;
+  }
+
+  .grid__content h1 {
+    font-size: 4.5rem;
+    max-width: 15ch;
+    position: relative;
+    padding-top: 3rem;
+    line-height: 0.9;
+  }
+
+  .grid__content p {
+    margin-top: 1.8rem;
+  }
+
+  .grid__content a.link-accent {
+    padding: 0.8rem 1.8rem;
+  }
+
+  .grid__content h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: var(--gray-50);
+  }
 }
