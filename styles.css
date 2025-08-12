@@ -106,7 +106,8 @@ dialog {
   min-height: 612px;
   background-image: url(./images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom right;
+  background-size: contain;
   z-index: 5;
 }
 
@@ -315,14 +316,8 @@ footer {
   gap: 0.8rem;
 }
 
-@media (min-width: 62.5em) {
+@media (min-width: 45em) {
   /* # HEADER # */
-  header {
-    padding: 1.5rem 4rem;
-    width: 85%;
-    margin-inline: auto;
-  }
-
   .nav-icon {
     display: none;
   }
@@ -344,6 +339,15 @@ footer {
     border: 2px solid var(--gray-950);
     padding: 0.5rem 1.5rem;
     color: var(--gray-950);
+  }
+}
+
+@media (min-width: 62.5em) {
+  /* # HEADER # */
+  header {
+    padding: 1.5rem 4rem;
+    width: 85%;
+    margin-inline: auto;
   }
 
   /* # "HUMANIZING" SECTION # */
