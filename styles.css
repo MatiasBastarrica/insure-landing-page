@@ -236,6 +236,7 @@ dialog a.link-accent {
   margin-top: 1rem;
   line-height: 1.6;
   font-size: 1.035rem;
+  max-width: 45ch;
 }
 
 /* ### CALL TO ACTION ### */
@@ -427,7 +428,7 @@ footer {
   /* # "WE ARE DIFFERENT" SECTION # */
 
   .we-are-different-section {
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
     position: relative;
     text-align: start;
@@ -507,5 +508,11 @@ footer {
 
   .ft-item {
     text-align: start;
+  }
+}
+
+@media (min-width: 80em) {
+  .we-are-different-section {
+    padding-top: 20rem;
   }
 }
