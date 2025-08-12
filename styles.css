@@ -311,18 +311,30 @@ footer {
 
 @media (min-width: 62.5em) {
   /* # HEADER # */
+  header {
+    padding: 1.5rem 4rem;
+  }
+
   .nav-icon {
     display: none;
   }
 
   .desktop-nav {
     display: block;
+    text-transform: uppercase;
+    color: var(--gray-700);
+    font-weight: var(--fw-700);
   }
 
-  .desktop-nav nav ul {
+  .desktop-nav ul {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: stretch;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .desktop-nav ul a.link-accent {
+    border: 2px solid var(--gray-950);
+    padding: 0.5rem 1.5rem;
+    color: var(--gray-950);
   }
 }
