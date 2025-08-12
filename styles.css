@@ -180,6 +180,11 @@ dialog a.link-accent {
   letter-spacing: 3px;
 }
 
+.grid__content a:hover {
+  background-color: var(--gray-50);
+  color: var(--blue-950);
+}
+
 .grid__img {
   grid-area: img;
 }
@@ -268,6 +273,11 @@ dialog a.link-accent {
   align-self: center;
 }
 
+.cta-section a:hover {
+  background-color: var(--gray-50);
+  color: var(--blue-950);
+}
+
 /* ### FOOTER ### */
 
 footer {
@@ -289,7 +299,12 @@ footer {
 
 .social-icons ul {
   display: flex;
+  align-items: center;
   gap: 0.8rem;
+}
+
+.social-icons a:hover svg path {
+  fill: var(--blue-950);
 }
 
 .row-2 {
@@ -297,6 +312,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.row-2 a:hover {
+  text-decoration: underline;
 }
 
 .ft-item {
@@ -354,10 +373,19 @@ footer {
     gap: 1.5rem;
   }
 
+  .desktop-nav a:hover {
+    color: var(--gray-950);
+  }
+
   .desktop-nav ul a.link-accent {
     border: 2px solid var(--gray-950);
     padding: 0.5rem 1.5rem;
     color: var(--gray-950);
+  }
+
+  .desktop-nav ul a.link-accent:hover {
+    color: var(--gray-50);
+    background-color: var(--gray-950);
   }
 
   /* # CTA SECTION # */
