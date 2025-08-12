@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/insure-landing-page-mb-6vtWPS49UW)
 - Live Site URL: [Live](https://matiasbastarrica.github.io/insure-landing-page/)
 
 ## My process
